@@ -1,0 +1,16 @@
+---
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Purfakt/config-repo
+          #uri: http://odyssey.devoteam.be/netflix-team/config-repo
+          #username: sdethuin
+          #password:
+          search-paths:
+            - 'api*'
+http:
+  sslverify: false
